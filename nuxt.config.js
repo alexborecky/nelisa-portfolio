@@ -23,11 +23,14 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/scss/_layouts.scss',
+    '~/assets/scss/_typography.scss',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/uiKit.js',
   ],
   /*
   ** Nuxt.js dev-modules
@@ -38,7 +41,14 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/style-resources',
   ],
+
+  styleResources: {
+    scss: [
+        '~/assets/scss/_colours.scss',
+    ]
+  },
   /*
   ** Build configuration
   */
