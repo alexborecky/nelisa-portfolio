@@ -1,0 +1,17 @@
+{
+  "name": "Nelisa",
+  "version": "1.0.0",
+  "description": "Nelisa&#39;s Alcalde&#39;s Showreel and Protfolio",
+  "author": "Alex",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {}
+}
