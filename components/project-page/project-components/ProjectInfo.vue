@@ -4,14 +4,16 @@
             <h1>This is title</h1>
         </div>
         <div class="tabs">
-            <div class="controls flex">
-                <h2>{ {tabOne} }</h2>
-                <h2>{ {tabTwo} }</h2>
-                <h2>{ {tabThree} }</h2>
-            </div>
-            <div class="description">
-                <p>Lorem Ipsum</p>
-            </div>
+            <Tabs 
+                tabOneTitle="Basic Info"
+                tabTwoTitle="Awards"
+                tabThreeTitle="Credits"
+                tabFourTitle="Technical"
+            >
+                <div class="green-bkg" slot="tabOne"><Narrative /></div>
+                <div slot="tabTwo"><Documentaries /></div>
+                <div slot="tabThree"><MusicVideos /></div>
+            </Tabs>
         </div>
     </div>
 </template>
@@ -27,7 +29,6 @@
 .project-info {
     position: relative;
     top: 0;
-    height: 400px;
     background-color: green;
     .title {
         h1 {

@@ -22,6 +22,7 @@
 <style lang="scss" scoped>
 
 .stills {
+    margin-top: 80px;
     h3 {
         text-transform: uppercase;
         font-size: 24px;

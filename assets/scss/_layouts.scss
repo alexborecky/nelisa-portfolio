@@ -180,3 +180,13 @@ a {
         }
     }
 }
+
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-gap: 40px;
+    @media only screen and (max-width: 450px) {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
