@@ -95,8 +95,7 @@ h5 {
 p {
     font-size: 16px;
     line-height: 32px;
-    letter-spacing: .4px;
-    
+    letter-spacing: 2px;
     @media only screen and (max-width: 1440px) {
         font-size: 16px;
         line-height: 24px;
@@ -107,6 +106,13 @@ p {
             line-height: 8px !important;
         }
     }
+}
+
+.tab-text {
+    line-height: 48px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .small {

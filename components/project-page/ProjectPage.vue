@@ -2,7 +2,10 @@
     <div class="project-page hero flex center-column-top">
         <Heading />
         <div class="container">
-            <ProjectInfo />
+            <ProjectInfo 
+                :filmTitle="filmTitle"
+                :description="description"
+            />
             <Stills />
         </div>
     </div>
@@ -10,7 +13,11 @@
 
 <script>
     export default {
-        name: 'ProjectPage'
+        name: 'ProjectPage',
+        props: [
+            'filmTitle',
+            'description'
+        ]
     }
 </script>
 

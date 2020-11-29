@@ -5,25 +5,25 @@
                 :class="{'active': currentTab == 1}" 
                 class="tab flex " 
                 @click="selectTab(1)">
-                <h2>{{tabOneTitle}}</h2>
+                <p class="tab-text">{{tabOneTitle}}</p>
             </div>
             <div 
                 :class="{'active': currentTab == 2}" 
                 class="tab flex " 
                 @click="selectTab(2)">
-                <h2>{{tabTwoTitle}}</h2>
+                <p class="tab-text">{{tabTwoTitle}}</p>
             </div>
             <div 
                 :class="{'active': currentTab == 3}" 
                 class="tab flex " 
                 @click="selectTab(3)">
-                <h2>{{tabThreeTitle}}</h2>
+                <p class="tab-text">{{tabThreeTitle}}</p>
             </div>
             <div 
                 :class="{'active': currentTab == 4}" 
                 class="tab flex " 
                 @click="selectTab(4)">
-                <h2>{{tabFourTitle}}</h2>
+                <p class="tab-text">{{tabFourTitle}}</p>
             </div>
         </div>
 
