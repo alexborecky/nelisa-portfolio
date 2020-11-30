@@ -1,24 +1,48 @@
 <template>
-    <div class="credits flex half">
-        <div class="roles">
-            <ul>
-                <p>{{roleOne}}</p>
-                <p>{{roleTwo}}</p>
-                <p>{{roleThree}}</p>
-                <p>{{roleFour}}</p>
-                <p>{{roleFive}}</p>
-                <p>{{roleSix}}</p>
-            </ul>
+    <div class="credits flex full-width">
+        <div class="half flex">
+            <div class="roles">
+                <ul>
+                    <p>{{roleOne}}</p>
+                    <p>{{roleTwo}}</p>
+                    <p>{{roleThree}}</p>
+                    <p>{{roleFour}}</p>
+                    <p>{{roleFive}}</p>
+                    <p>{{roleSix}}</p>
+                </ul>
+            </div>
+            <div class="names">
+                <ul>
+                    <p>{{nameOne}}</p>
+                    <p>{{nameTwo}}</p>
+                    <p>{{nameThree}}</p>
+                    <p>{{nameFour}}</p>
+                    <p>{{nameFive}}</p>
+                    <p>{{nameSix}}</p>
+                </ul>
+            </div>
         </div>
-        <div class="names">
-            <ul>
-                <p>{{nameOne}}</p>
-                <p>{{nameTwo}}</p>
-                <p>{{nameThree}}</p>
-                <p>{{nameFour}}</p>
-                <p>{{nameFive}}</p>
-                <p>{{nameSix}}</p>
-            </ul>
+        <div class="half flex">
+            <div class="roles">
+                <ul>
+                    <p>{{roleSeven}}</p>
+                    <p>{{roleEight}}</p>
+                    <p>{{roleNine}}</p>
+                    <p>{{roleTen}}</p>
+                    <p>{{roleEleven}}</p>
+                    <p>{{roleTwelve}}</p>
+                </ul>
+            </div>
+            <div class="names">
+                <ul>
+                    <p>{{nameSeven}}</p>
+                    <p>{{nameEight}}</p>
+                    <p>{{nameNine}}</p>
+                    <p>{{nameTen}}</p>
+                    <p>{{nameEleven}}</p>
+                    <p>{{nameTwelve}}</p>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -33,12 +57,24 @@
             'roleFour',
             'roleFive',
             'roleSix',
+            'roleSeven',
+            'roleEight',
+            'roleNine',
+            'roleTen',
+            'roleEleven',
+            'roleTwelve',
             'nameOne',
             'nameTwo',
             'nameThree',
             'nameFour',
             'nameFive',
-            'nameSix'
+            'nameSix',
+            'nameSeven',
+            'nameEight',
+            'nameNine',
+            'nameTen',
+            'nameEleven',
+            'nameTwelve',
         ]
     }
 </script>
@@ -46,7 +82,6 @@
 <style lang="scss" scoped>
 
 .credits {
-    max-width: 40%;
     p {
         text-transform: uppercase;
         text-align: left;

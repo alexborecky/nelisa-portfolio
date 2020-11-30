@@ -15,19 +15,19 @@
                         :description="description"
                     />
                 </div>
-                <div slot="tabTwo"><Awards /></div>
-                <div slot="tabThree">
-                    <Credits 
-                        :roleOne="roleName"
-                        :roleTwo="roleTwo"
-                        :roleThree="roleName"
-                        :roleFour="roleName"
-                        :roleFive="roleName"
-                        :nameOne="name"
-                        :nameTwo="name"
-                        :nameThree="name"
-                        :nameFour="name"
-                        :nameFive="name"
+                <div slot="tabTwo" class="flex">
+                    <Awards 
+                        v-for="award in awards"
+                        :key="award.award"
+                        :award="award.award"
+                    />
+                </div>
+                <div slot="tabThree" class="credits-columns">
+                    <CreditsTest
+                        v-for="role in roles"
+                        :key="role.title"
+                        :role="role.role"
+                        :name="role.name"
                     />
                 </div>
             </Tabs>
@@ -36,13 +36,19 @@
 </template>
 
 <script>
+
+import roles from '@/assets/films/persephone/roles.js'
+import awards from '@/assets/films/persephone/awards.js'
+
     export default {
         name: 'ProjectInfo',
         data() {
             return {
                 roleName: 'Director',
                 roleTwo: 'Director of Photography',
-                name: 'Name Surname'
+                name: 'Name Surname',
+                roles: roles,
+                awards: awards
             }
         },
         props: [
@@ -62,6 +68,14 @@
         h1 {
             text-transform: uppercase;
         }
+    }
+    .credits-columns {
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 80px;
     }
 }
 

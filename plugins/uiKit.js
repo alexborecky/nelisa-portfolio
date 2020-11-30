@@ -11,6 +11,7 @@ import Stills from '@/components/project-page/project-components/Stills.vue'
 import Description from '@/components/project-page/project-components/Description.vue'
 import Awards from '@/components/project-page/project-components/Awards.vue'
 import Credits from '@/components/project-page/project-components/Credits.vue'
+import CreditsTest from '@/components/project-page/project-components/CreditsTest.vue'
 
 import Narrative from '@/components/grids/Narrative.vue'
 import Documentaries from '@/components/grids/Documentaries.vue'
@@ -31,3 +32,4 @@ Vue.component('MusicVideos', MusicVideos)
 Vue.component('Description', Description)
 Vue.component('Awards', Awards)
 Vue.component('Credits', Credits)
+Vue.component('CreditsTest', CreditsTest)
