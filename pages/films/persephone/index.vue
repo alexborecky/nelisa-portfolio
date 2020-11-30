@@ -1,9 +1,13 @@
 <template>
-    <div>
-        <ProjectPage 
-            :filmTitle="pers.title"
-            :description="pers.description"
-        />
+    <div class="project-page hero flex center-column-top">
+        <Heading />
+        <div class="container">
+            <ProjectInfo 
+                :filmTitle="pers.title"
+                :description="pers.description"
+            />
+            <Stills />
+        </div>
     </div>
 </template>
 
