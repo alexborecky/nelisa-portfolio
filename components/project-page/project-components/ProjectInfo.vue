@@ -1,13 +1,13 @@
 <template>
     <div class="project-info">
         <div class="title flex">
-            <h1>{{filmTitle}}</h1>
+            <h1>{{title}}</h1>
         </div>
         <div class="tabs">
             <Tabs 
                 tabOneTitle="Basic Info"
-                tabTwoTitle="Awards"
-                tabThreeTitle="Credits"
+                tabTwoTitle="Credits"
+                tabThreeTitle="Awards"
                 tabFourTitle=""
             >
                 <div class="green-bkg" slot="tabOne">
@@ -15,20 +15,28 @@
                         :description="description"
                     />
                 </div>
-                <div slot="tabTwo" class="flex">
+                <!-- <div slot="tabTwo" class="flex">
                     <Awards 
                         v-for="award in awards"
                         :key="award.award"
                         :award="award.award"
                     />
-                </div>
-                <div slot="tabThree" class="credits-columns">
-                    <CreditsTest
-                        v-for="role in roles"
-                        :key="role.title"
-                        :role="role.role"
-                        :name="role.name"
-                    />
+                </div> -->
+                <div slot="tabTwo" class="credits-columns">
+                    <div class="credits">
+                        <div class="flex">
+                            <div class="roles">
+                                <slot name="roles">
+                                    <p>{{ role }}</p>
+                                </slot>
+                            </div>
+                            <div class="names">
+                                <slot name="names">
+                                    <p>{{ name }}</p>
+                                </slot>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Tabs>
         </div>
@@ -37,23 +45,19 @@
 
 <script>
 
-import roles from '@/assets/films/persephone/roles.js'
 import awards from '@/assets/films/persephone/awards.js'
 
     export default {
         name: 'ProjectInfo',
         data() {
             return {
-                roleName: 'Director',
-                roleTwo: 'Director of Photography',
-                name: 'Name Surname',
-                roles: roles,
-                awards: awards
             }
         },
         props: [
-            'filmTitle',
-            'description'
+            'title',
+            'description',
+            'role',
+            'name'
         ]
     }
 </script>
@@ -63,19 +67,29 @@ import awards from '@/assets/films/persephone/awards.js'
 .project-info {
     margin: 40px 0;
     position: relative;
-    top: 0;
     .title {
         h1 {
             text-transform: uppercase;
         }
     }
-    .credits-columns {
-        -moz-column-count: 2;
-        -moz-column-gap: 20px;
-        -webkit-column-count: 2;
-        -webkit-column-gap: 20px;
-        column-count: 2;
-        column-gap: 80px;
+    // .credits-columns {
+    //     -moz-column-count: 2;
+    //     -moz-column-gap: 20px;
+    //     -webkit-column-count: 2;
+    //     -webkit-column-gap: 20px;
+    //     column-count: 2;
+    //     column-gap: 80px;
+    // }
+}
+
+.credits {
+    p {
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .names {
+        margin-left: 40px;
+        font-weight: 700;
     }
 }
 

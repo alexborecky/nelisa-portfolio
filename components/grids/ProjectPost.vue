@@ -1,6 +1,6 @@
 <template>
-    <nuxt-link to="/films/persephone" class="project-post flex" :style="{backgroundImage: 'url('+ thumbnail +')'}">
-        <h3>{{projectTitle}}</h3>
+    <nuxt-link :to="to" class="project-post flex" :style="{backgroundImage: 'url('+ thumbnail +')'}">
+        <h3>{{title}}</h3>
         <div class="overlay" :style="{backgroundImage: 'url('+ hover +')'}">
         </div>
     </nuxt-link>
@@ -10,9 +10,10 @@
     export default {
         name: 'ProjectPost',
         props: [
-            'projectTitle',
+            'title',
             'thumbnail',
-            'hover'
+            'hover',
+            'to'    
         ]
     }
 </script>
@@ -21,7 +22,7 @@
 
 .project-post {
     height: 240px;
-    background-size: auto 100%;
+    background-size: cover;
     background-position: center;
     align-items: flex-end;
     transition: background-size .3s ease-in;
@@ -32,6 +33,7 @@
     }
     .overlay {
         background-size: cover;
+        background-position: center;
         opacity: 0;
         height: 100%;
         width: 100%;

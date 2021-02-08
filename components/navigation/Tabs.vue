@@ -26,7 +26,6 @@
                 <p class="tab-text">{{tabFourTitle}}</p>
             </div>
         </div>
-
         <div class="tab-content full-width">
             <div v-if="currentTab == 1" class="text">
                 <slot name="tabOne"></slot>

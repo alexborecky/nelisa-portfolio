@@ -6,8 +6,8 @@
             </nuxt-link>
             <div class="links flex">
                 <ul class="flex center">
-                    <li><nuxt-link class="flex center-column-top" to="/">Showreel<span class="underline"></span></nuxt-link></li>
-                    <li><nuxt-link class="flex center-column-top" to="/films">Films<span class="underline"></span></nuxt-link></li>
+                    <li><nuxt-link class="flex center-column-top first-link" to="/">Showreel<span class="underline"></span></nuxt-link></li>
+                    <li><nuxt-link class="flex center-column-top" to="/genres">Films<span class="underline"></span></nuxt-link></li>
                     <li><nuxt-link class="flex center-column-top" to="/about">About<span class="underline"></span></nuxt-link></li>
                     <li><nuxt-link class="flex center-column-top" to="/contact">Contact<span class="underline"></span></nuxt-link></li>
                 </ul>
@@ -116,7 +116,15 @@ export default {
     }
 }
 
-.nuxt-link-exact-active {
+// .nuxt-link-exact-active {
+//     color: white;
+//     opacity: 1 !important;
+//     .underline {
+//       width: 100%;
+//     }
+// }
+
+.first-link.nuxt-link-exact-active, :not(.first-link).nuxt-link-active {
     color: white;
     opacity: 1 !important;
     .underline {

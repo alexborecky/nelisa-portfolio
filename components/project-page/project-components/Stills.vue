@@ -3,8 +3,8 @@
         <h3>Stills</h3>
         <div class="grid">
             <div class="row two-column flex">
-                <div class="small-still"></div>
-                <div class="small-still"></div>
+                <div :style="{backgroundImage: 'url(' + galleryImage + ')'}" class="small-still"></div>
+                <div :style="{backgroundImage: 'url(' + galleryImage + ')'}" class="small-still"></div>
             </div>
             <div class="row one-column">
                 <div class="big-still"></div>

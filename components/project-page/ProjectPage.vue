@@ -3,11 +3,13 @@
         <Heading />
         <div class="container">
             <ProjectInfo 
-                :filmTitle="filmTitle"
+                v-for="film in films" 
+                :key="film.slug"
+                :title="film.title"
                 :description="description"
             />
-            <Stills />
         </div>
+        <Stills />
     </div>
 </template>
 
@@ -15,7 +17,7 @@
     export default {
         name: 'ProjectPage',
         props: [
-            'filmTitle',
+            'title',
             'description'
         ]
     }

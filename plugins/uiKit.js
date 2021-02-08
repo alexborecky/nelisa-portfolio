@@ -18,6 +18,7 @@ import Documentaries from '@/components/grids/Documentaries.vue'
 import MusicVideos from '@/components/grids/MusicVideos.vue'
 import ProjectPost from '@/components/grids/ProjectPost.vue'
 
+
 Vue.component('navigation', navigation)
 Vue.component('sideBar', sideBar)
 Vue.component('ProjectPage', ProjectPage)

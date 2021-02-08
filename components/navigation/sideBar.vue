@@ -79,7 +79,6 @@ export default {
 }
 
 
-
 .burger-nav {
   z-index: 100;
   width: auto;
