@@ -45,7 +45,6 @@
 
 <script>
 
-import awards from '@/assets/films/persephone/awards.js'
 
     export default {
         name: 'ProjectInfo',
