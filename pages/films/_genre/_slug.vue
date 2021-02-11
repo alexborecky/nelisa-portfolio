@@ -18,6 +18,11 @@
                     :key="item.role">
                     <p>{{item.name}}</p>
                 </div>
+                <div slot="equip"
+                    v-for="item in film.equipment" 
+                    :key="item.equipment">
+                    <p>{{item.equip}}</p>
+                </div>
             </ProjectInfo>
             <div class="stills">
                 <h3>Stills</h3>

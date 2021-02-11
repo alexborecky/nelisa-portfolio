@@ -6,11 +6,27 @@
         <div class="tabs">
             <Tabs 
                 tabOneTitle="Basic Info"
-                tabTwoTitle="Credits"
-                tabThreeTitle="Awards"
+                tabTwoTitle="Technical"
+                tabThreeTitle=""
                 tabFourTitle=""
             >
                 <div class="green-bkg" slot="tabOne">
+                    <div slot="tabTwo" class="credits-columns">
+                        <div class="credits">
+                            <div class="flex">
+                                <div class="roles">
+                                    <slot name="roles">
+                                        <p>{{ role }}</p>
+                                    </slot>
+                                </div>
+                                <div class="names">
+                                    <slot name="names">
+                                        <p>{{ name }}</p>
+                                    </slot>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <Description 
                         :description="description"
                     />
@@ -22,7 +38,7 @@
                         :award="award.award"
                     />
                 </div> -->
-                <div slot="tabTwo" class="credits-columns">
+                <!-- <div slot="tabTwo" class="credits-columns">
                     <div class="credits">
                         <div class="flex">
                             <div class="roles">
@@ -33,6 +49,17 @@
                             <div class="names">
                                 <slot name="names">
                                     <p>{{ name }}</p>
+                                </slot>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div slot="tabTwo" class="technical-columns">
+                    <div class="credits">
+                        <div class="flex">
+                            <div class="equip">
+                                <slot name="equip">
+                                    <p>{{ equip }}</p>
                                 </slot>
                             </div>
                         </div>
@@ -56,7 +83,8 @@
             'title',
             'description',
             'role',
-            'name'
+            'name',
+            'equip',
         ]
     }
 </script>
@@ -82,6 +110,7 @@
 }
 
 .credits {
+    margin: 24px 0;
     p {
         text-transform: uppercase;
         text-align: left;

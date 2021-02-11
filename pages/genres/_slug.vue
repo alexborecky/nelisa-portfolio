@@ -28,7 +28,7 @@
 <script>
     export default {
         async asyncData({$content, route}){
-            const films = await $content('films', route.params.slug).fetch();
+            const films = await $content('films', route.params.slug).sortBy('order','asc').fetch();
             const genres = await $content('genres').sortBy('order','asc').fetch();
             return {
                 genres,
