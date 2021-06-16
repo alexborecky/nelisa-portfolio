@@ -2,7 +2,8 @@
         <div class="player">
             <div class="video" :class="{'hidden-video': showVideo}">
                 <div class="background flex middle" id="stop" @click="showVideo = true">
-                        <iframe :src="link" width="80%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <iframe :src="link" width="80%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <div class="cross mobile" @click="showVideo = false" id="stop"><h4>Close player</h4></div>
                 </div>
             </div>
             <div class="start-video" id='start' @click="showVideo = false" :style="{backgroundImage: 'url('+ image +')'}">
@@ -88,6 +89,18 @@
         background-color: black;
         width: 100%;
         height: 100%;
+        flex-flow: column;
+        .cross {
+            opacity: .4;
+            margin-top: 16px;
+            h4 {
+                font-weight: 600;
+            }
+            &:hover {
+                cursor: pointer !important;
+                opacity: 1;
+            }
+        }
         &:hover {
             cursor: url(https://ik.imagekit.io/alexborecky/Playground/close_k8B7__sXRMC3B.svg) 25 15, auto !important;
         }
@@ -117,6 +130,12 @@
             height: auto;
         }
     }
+}
+
+.mobile.cross {
+        @media (min-width: 768px) {
+            display: none;
+        }
 }
 
 </style>
