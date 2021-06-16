@@ -6,6 +6,9 @@ hover: 'https://ik.imagekit.io/alexborecky/Nelisa/SMOKE/SMOKE.00_02_01_19.Still0
 link: 'https://www.youtube.com/embed/7lGs95Hp7Mk'
 description: 'Smoke is both a verb in the imperative mood, but also an interjection. The film presents an elusive portrait of the extrastructural existence of a poet and king of modern times, living outside the system and conventions, but moving in all shades of the spectrum of meaning of the word.'
 
+videoImage: 'https://ik.imagekit.io/alexborecky/Nelisa/SMOKE/SMOKE.00_17_29_21.Still007_mPe2fjXsGe.jpg'
+videoLink: null
+
 roles: [
     {
         role: 'Directed by',

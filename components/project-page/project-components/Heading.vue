@@ -1,6 +1,7 @@
 <template>
     <div class="video hero">
-        <iframe :src="link" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        <VideoPlayer />
+        <!-- <iframe :src="link" width="640" height="360" frameborder="0" allowfullscreen></iframe> -->
     </div>
 </template>
 

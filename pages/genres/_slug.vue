@@ -54,17 +54,38 @@
 .tab-bar {
     margin: 40px 0;
     .tab {
-        opacity: 0.4;
+        p {
+            opacity: 0.4;
+        }
         margin-right: 40px;
         &:hover {
             cursor: pointer;
-            opacity: 1;
+            p {
+                opacity: 1;
+            }
+            @media (max-width: 450px) {
+                p {
+                    opacity: .4;
+                }
+            }
+        }
+    }
+    @media (max-width: 450px) {
+        overflow-x: scroll;
+        width: auto;
+        white-space: nowrap;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        &::-webkit-scrollbar {
+            display: none;
         }
     }
 }
 
 .nuxt-link-exact-active {
-    opacity: 1 !important;
+    p {
+        opacity: 1 !important;
+    }
 }
 
 </style>

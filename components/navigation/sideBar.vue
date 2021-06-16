@@ -23,7 +23,7 @@
                     </nuxt-link>
                   <ul>
                       <li @click="isActive = !isActive"><nuxt-link to="/">Showreel</nuxt-link></li>
-                      <li @click="isActive = !isActive"><nuxt-link to="/films">Films</nuxt-link></li>
+                      <li @click="isActive = !isActive"><nuxt-link to="/genres">Films</nuxt-link></li>
                       <li @click="isActive = !isActive"><nuxt-link to="/about">About</nuxt-link></li>
                       <li @click="isActive = !isActive"><nuxt-link to="/contact">Contact</nuxt-link></li>
                   </ul>

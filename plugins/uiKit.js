@@ -17,6 +17,7 @@ import Narrative from '@/components/grids/Narrative.vue'
 import Documentaries from '@/components/grids/Documentaries.vue'
 import MusicVideos from '@/components/grids/MusicVideos.vue'
 import ProjectPost from '@/components/grids/ProjectPost.vue'
+import VideoPlayer from '@/components/VideoPlayer.vue'
 
 
 Vue.component('navigation', navigation)
@@ -34,3 +35,4 @@ Vue.component('Description', Description)
 Vue.component('Awards', Awards)
 Vue.component('Credits', Credits)
 Vue.component('CreditsTest', CreditsTest)
+Vue.component('VideoPlayer', VideoPlayer)

@@ -13,12 +13,25 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      {
+        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+        type: "text/javascript"
+      },
+      {
+        src: "https://player.vimeo.com/api/player.js",
+      },
     ]
   },
   /*
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
+  server: {     
+    port: 8000, // default: 3000     
+    host: '0.0.0.0', // default: localhost   
+  },  
   /*
   ** Global CSS
   */
@@ -31,6 +44,7 @@ export default {
   */
   plugins: [
     '~/plugins/uiKit.js',
+    { src: '~/plugins/vimeo-player.js'},
   ],
   /*
   ** Nuxt.js dev-modules
@@ -54,6 +68,9 @@ export default {
   ** Build configuration
   */
   build: {
+    vendor: [
+      'vue-vimeo-player'
+    ],
     /*
     ** You can extend webpack config here
     */

@@ -1,9 +1,11 @@
 <template>
     <div class="hero">
+        <VideoPlayer 
+            :image="film.videoImage"
+            :link="film.videoLink"
+            v-if="film.videoLink !== null"
+        />
         <div class="container">
-            <Heading 
-                :link="film.link"
-            />
             <ProjectInfo 
                 :title="film.title"
                 :description="film.description"
@@ -42,6 +44,11 @@
 
 <script>
     export default {
+        data () {
+            return {
+                videoLink: '',
+            }
+        },
         async asyncData({$content, route}){
         const film = await $content('films', route.params.genre, route.params.slug).fetch();
             return {
@@ -53,6 +60,12 @@
 </script>
 
 <style lang="scss" scoped>
+
+.player {
+    top: 0px !important;
+    margin-top: -96px;
+    position: relative;
+}
 
 .stills {
     margin-top: 80px;

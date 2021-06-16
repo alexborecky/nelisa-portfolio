@@ -7,6 +7,9 @@ link: ''
 description: "This short hybrid documentary is the director's attempt at retracing both true and imagined memories of her mother, who took her
 own life."
 
+videoImage: 'https://ik.imagekit.io/alexborecky/Nelisa/TTCH/953_0015.00_07_18_12.Still003-min_oUlVObOG6P.jpg'
+videoLink: null
+
 roles: [
     {
         role: 'Directed by',

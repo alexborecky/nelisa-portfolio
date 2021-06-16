@@ -6,6 +6,9 @@ hover: 'https://ik.imagekit.io/alexborecky/Nelisa/HBO/P2_Day_8_9__Resolve_.01_02
 link: 'https://www.youtube.com/embed/7lGs95Hp7Mk'
 description: 'Honney Bunny Duracel reflects Lenka Kardova’s passion for boxing with itsappeal and its demise. This documentary is told by Lenka’s voice over who tells us her experience with boxing.'
 
+videoImage: 'https://ik.imagekit.io/alexborecky/Nelisa/NEW_YEAR/NEWYEAR.00_19_10_10.Still007-min_BMqLRl_s4117Q.jpg'
+videoLink: null
+
 roles: [
     {
         role: 'Directed by',

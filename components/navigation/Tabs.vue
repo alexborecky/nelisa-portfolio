@@ -72,8 +72,6 @@ export default {
 
 <style lang="scss" scoped>
 
-
-
 .text {
     width: 100%;
     transition: .4s;
@@ -92,7 +90,13 @@ export default {
     .active {
         opacity: 1;
     }
+    @media (max-width: 450px) {
+        p {
+            font-size: 16px;
+        }
+        .tab {
+            margin-right: 24px;
+        }
+    }
 }
-
-    
 </style>

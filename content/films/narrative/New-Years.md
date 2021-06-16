@@ -6,6 +6,9 @@ hover: 'https://ik.imagekit.io/alexborecky/Nelisa/NEW_YEAR/NEWYEAR.00_27_28_12.S
 description: "On New Years eve a Lebanese journalist is stuck editing a recap video about all the terrible events that happened during 2019. On his way back from a smoke on his building's rooftop, he crosses paths with two characters; Magda, a teenager sneaking up to the roof to smoke cigarettes, and Sam, a Korean DJ who's slipping flyers for her first gig tonight."
 link: 'https://player.vimeo.com/video/359500636'
 
+videoImage: 'https://ik.imagekit.io/alexborecky/Nelisa/NEW_YEAR/NEWYEAR.00_19_10_10.Still007-min_BMqLRl_s4117Q.jpg'
+videoLink: 'https://player.vimeo.com/video/359500636'
+
 roles: [
     {
         role: 'Directed by',
